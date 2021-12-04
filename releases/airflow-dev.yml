@@ -9,7 +9,7 @@ spec:
   releaseName: airflow-dev
     # serviceAccountName: app
   chart:
-    repository: https://edwinguo.github.io/airflow-eks-helm-chart
+    repository: https://github.com/joanna-shu-wu/airflow-eks-helm-chart.git
     name: airflow
     version: 1.0.8
   values:
@@ -50,7 +50,7 @@ spec:
         enabled: false
       gitSync:
         enabled: true
-        repo: https://github.com/EdwinGuo/airflow-dags.git 
+        repo: https://github.com/joanna-shu-wu/airflow-dags.git 
         branch: master
         maxFailures: 0
         subPath: ""
